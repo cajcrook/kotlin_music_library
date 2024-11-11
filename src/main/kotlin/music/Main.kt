@@ -5,7 +5,6 @@ package music
 class MusicLibrary {
     val tracklist = mutableListOf<String>()
 
-
     fun addTrack(track: Track): String {
         if (track.title.isNotBlank() && track.artist.isNotBlank() && track.duration > 0) {
             tracklist.add("${track.title} - ${track.artist} - ${track.duration}")
@@ -31,9 +30,5 @@ fun main(args: Array<String>) {
     println("getTrack index 0: ${musicLibrary.getTracks()[0]}")
     println("getTrack index 1: ${musicLibrary.getTracks()[1]}")
     println("getTrack index 2: ${musicLibrary.getTracks()[2]}")
-
-
-
-
-
 }
+
